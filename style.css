@@ -1,0 +1,310 @@
+/* Base Styles (PC/Desktop) */
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    overflow-x: hidden;
+}
+
+.top-left-image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 4px;
+    margin-top: 5vh;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: center;
+    margin-top: 1vh;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.coming-soon {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #f0f0f0;
+}
+
+.signup-section {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-section form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.signup-section input[type="email"] {
+    padding: 12px;
+    font-size: 1.1rem;
+    width: 60%;
+    margin-right: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.signup-section input[type="submit"] {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    background-color: #f39c12;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.signup-section input[type="submit"]:hover {
+    background-color: #e67e22;
+    color: white;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.signup-message {
+    font-size: 0.8rem;
+    color: #ccc;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.instagram-links {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.instagram-links p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.instagram-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.instagram-links a:hover {
+    color: #f39c12;
+}
+
+/* Media Queries for mobile screens */
+@media (max-width: 768px) {
+    /* Logo and Text Adjustments for Mobile Only */
+    .top-left-image {
+        width: 60px; /* Reduced logo size on mobile */
+        top: 10px;
+        left: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Smaller text for mobile */
+        text-align: left;
+        margin-left: 75px; /* Reduced margin for mobile */
+        margin-top: 10px;
+        display: inline-block; /* Align next to logo */
+    }
+
+    p {
+        font-size: 0.9rem;
+        text-align: left;
+        margin-left: 75px;
+        margin-top: 0;
+        display: inline-block; /* Align below h1 next to logo */
+    }
+
+    .coming-soon {
+        top: 35%; /* Move AVAILABLE SOON upwards */
+        font-size: 3.5rem;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+
+    .signup-section {
+        top: 45%;
+        width: 100%;
+        transform: translateX(-50%);
+    }
+
+    .signup-section form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .signup-section input[type="email"] {
+        padding: 12px;
+        font-size: 1.1rem;
+        width: 60%;
+        margin-right: 10px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        background-color: transparent;
+        color: #fff;
+        transition: all 0.3s ease;
+        text-align: center;
+    }
+
+    .signup-section input[type="submit"] {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+        background-color: #f39c12;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .signup-message {
+        font-size: 0.8rem;
+        color: #ccc;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    /* Adjust Instagram Links for Mobile Devices */
+    .instagram-links {
+        text-align: center;
+        bottom: 10px;
+    }
+
+    .instagram-links p {
+        display: inline; /* Align text and links on the same line */
+        font-size: 1rem;
+        margin-right: 5px; /* Add some spacing */
+    }
+
+    .instagram-links a {
+        display: inline;
+        margin: 0 10px; /* Space between the names */
+        font-size: 1rem; /* Adjust size */
+    }
+}
+
+/* Media Queries for small mobile screens */
+@media (max-width: 480px) {
+    .top-left-image {
+        width: 50px; /* Smaller logo size for small screens */
+        top: 10px;
+        left: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: left;
+        margin-left: 70px;
+        margin-top: 10px;
+        display: inline-block; /* Align next to logo */
+    }
+
+    p {
+        font-size: 0.8rem;
+        text-align: left;
+        margin-left: 70px;
+        margin-top: 0;
+        display: inline-block; /* Align below h1 next to logo */
+    }
+
+    .coming-soon {
+        top: 40%;
+        font-size: 2.8rem;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    .signup-section {
+        top: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+    }
+
+    .signup-section form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .signup-section input[type="email"] {
+        padding: 10px;
+        font-size: 1rem;
+        width: 70%;
+        margin-right: 10px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        background-color: transparent;
+        color: #fff;
+        transition: all 0.3s ease;
+        text-align: center;
+    }
+
+    .signup-section input[type="submit"] {
+        padding: 10px 20px;
+        font-size: 1rem;
+        background-color: #f39c12;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .signup-message {
+        font-size: 0.75rem;
+        color: #ccc;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .instagram-links p, .instagram-links a {
+        font-size: 0.9rem;
+    }
+
+    .instagram-links {
+        text-align: center;
+        bottom: 10px;
+    }
+}
